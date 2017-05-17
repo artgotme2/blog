@@ -1,0 +1,2 @@
+# blog
+Art Blog
