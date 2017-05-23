@@ -1,19 +1,36 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+###  Hexo Configuration
+###  Docs: https://hexo.io/docs/configuration.html
+###  Source: https://github.com/hexojs/hexo/
+### "GITHUB  Pages"  configuration/ deployment  has been Inspired  by:
+###  https://www.sitepoint.com/project-documentation-hexo/
+###  Github command-line ( github bash)  deployment has been implemented  by using
+###  MrV01 github account as "collaborator" to  artgotme2/gh-pages repository.
+###
+###  Hexo is sensitive to timezones, therefore install MomentJS  and it's timezones
+###  npm install moment-timezone --save
+###
+###  Hexo  github plugin :
+###   npm install --save hexo-deployer-git
+###   REQUIRES  "git  global config"  when working from Windows ( GIT Bash  +  GitHUB app)
+###     git config --global user.email "VladV454@gmail.com"
+###     git config --global user.name  "MrV01"
+###
+###   Some Advises regarding blog themes, from other Hexo beginner :
+###   https://github.com/klugjo/hexo-theme-clean-blog
+###
 
-# Site
+### Site
 title: ARTGOTME2
 subtitle: Painting
-description:
-author: N. K.
+description: "Arts Got Me Too"
+author: "N. K."
 language: en
-timezone:
+timezone: "America/New_York"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: https://artgotme2.github.io/blog/
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -63,12 +80,14 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: artgotme2
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/artgotme2/blog.git
-  branch: gh-pages
+  repo:
+    github: "git@github.com:artgotme2/blog.git,gh-pages"
   message: "ARTGOTME2 Blog updated: {{ now('YYYY-MM-DD HH:mm:ss') }})"
+  name: artgotme2
+  email: nklimova01@gmail.com
