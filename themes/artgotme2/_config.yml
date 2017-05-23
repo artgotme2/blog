@@ -1,0 +1,7 @@
+# ARTGOTME2 theme configuration
+#  Inspired by https://www.sitepoint.com/project-documentation-hexo/
+### SASS  preprocessor: npm install --save hexo-renderer-sass
+node_sass:
+  outputStyle: nested
+  precision: 4
+  sourceComments: false
